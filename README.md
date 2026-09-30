@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cash-Flow-Management?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cash-Flow-Management?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cash-Flow-Management?style=social" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cash-Flow-Management?color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -65,9 +65,9 @@ Below is a detailed comparison of top commercial cash flow management and FP&A S
 
 The open-source cash flow ecosystem features self-hosted double-entry bookkeeping ledgers, ML-powered forecasting frameworks, terminal-first CLIs, and quantum-inspired payment scheduling engines.
 
-Repositories are ordered by **GitHub Star Count (Descending)** 🌟.
+Repositories are ordered by **GitHub Stars_Count (Descending)** 🌟.
 
-| 🛠️ Repository | ⭐ Stars | 📜 License | 🧰 Tech Stack | 📌 Core Capabilities & Highlights |
+| 🛠️ Repository | ⭐ GitHub_Stars | 📜 License | 🧰 Tech Stack | 📌 Core Capabilities & Highlights |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Actual Budget](https://github.com/actualbudget/actual)** | [<img src="https://img.shields.io/github/stars/actualbudget/actual?style=social&color=white" alt="Actual Budget Stars"/>](https://github.com/actualbudget/actual/stargazers) | `MIT` | Node.js, React, SQLite | **Local-first, privacy-focused envelope budgeting & cash flow app.** Zero cloud lock-in, end-to-end encryption, multi-device sync, and bank feeds via GoCardless/SimpleFIN. |
 | **[Firefly III](https://github.com/firefly-iii/firefly-iii)** | [<img src="https://img.shields.io/github/stars/firefly-iii/firefly-iii?style=social&color=white" alt="Firefly III Stars"/>](https://github.com/firefly-iii/firefly-iii/stargazers) | `AGPL-3.0` | PHP, Laravel, Docker | **Self-hosted double-entry financial manager with cash flow views.** Automated rule engine, multi-currency support, REST API, recurring transaction schedules, and budget tracking. |
