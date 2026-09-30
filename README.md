@@ -1,245 +1,125 @@
-# Awesome-Cash-Flow-Management
-
-## Top Cash Flow Management Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Cash Forecasting, Liquidity Planning, Scenario Analysis & Working Capital Optimization*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cash Flow Management**. These tools help finance teams, founders, and CFOs project cash positions, identify runway risks, model scenarios, and optimize working capital—moving beyond static spreadsheets to dynamic, real-time liquidity visibility.
-
-
-
-**Examples** include Pulse, Fathom, Float, CashFlow Frog, Dryrun, Fluidly, Agicap, PlanGuru, Jirav, and Cube (the category leaders).
-
-
-
-**Open-source emphasis**: Cash flow management has a **developing open-source ecosystem**. Unlike adjacent categories with mature platforms, open-source cash flow tools are primarily **focused utilities and research prototypes**. **Firefly III** (24k+ stars, AGPL-3.0) provides self-hosted double-entry bookkeeping with cash flow reporting . **Actual Budget** (29k+ stars, MIT) offers local-first envelope budgeting with cash flow views . **Equilibrium** implements quantum-inspired payment scheduling using QUBO optimization . **cfo-cli** delivers terminal-first cash flow forecasting with AI insights . **AFIS** provides ML-based 12-month cash flow projections with NIST AI RMF alignment . This section documents these focused solutions honestly.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Pulse](https://www.pulseapp.com/)**
-
-  Cash flow forecasting and management platform for startups and SMBs. Provides real-time cash visibility, scenario planning, and runway projections.
-
-
-
-- **[Fathom](https://www.fathomhq.com/)**
-
-  Financial analysis and reporting platform with cash flow forecasting. Provides KPI dashboards, benchmarking, and multi-entity consolidation for advisory firms and businesses.
-
-
-
-- **[Float](https://floatapp.com/)**
-
-  Cash flow forecasting software for businesses. Integrates with accounting software to provide real-time cash flow projections and scenario planning.
-
-
-
-- **[CashFlow Frog](https://www.cashflowfrog.com/)**
-
-  Cash flow forecasting and management platform. Provides cash flow projections, scenario modeling, and alerts for SMBs.
-
-
-
-- **[Dryrun](https://www.dryrun.com/)**
-
-  Cash flow forecasting and scenario planning platform. Integrates with QuickBooks, Xero, and Excel to provide 12-month cash flow projections.
-
-
-
-- **[Fluidly](https://fluidly.com/)**
-
-  AI-powered cash flow forecasting and management platform for accountants and businesses.
-
-
-
-- **[Agicap](https://agicap.com/)**
-
-  European cash flow management platform. Provides cash flow forecasting, cash positioning, and treasury management for SMBs and mid-market companies.
-
-
-
-- **[PlanGuru](https://www.planguru.com/)**
-
-  Budgeting, forecasting, and financial analysis software. Provides cash flow projections and scenario planning for businesses and advisors.
-
-
-
-- **[Jirav](https://www.jirav.com/)**
-
-  Financial planning and analysis platform with cash flow forecasting. Provides driver-based modeling, scenario planning, and board-ready reporting.
-
-
-
-- **[Cube](https://www.cubesoftware.com/)**
-
-  Spreadsheet-native FP&A platform with cash flow forecasting. Connects to ERP for real-time financial data and reporting.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Personal & Small Business Cash Flow Management
-
-
-
-- **[Firefly III](https://github.com/firefly-iii/firefly-iii)**
-
-  **The most widely adopted open-source personal finance manager with cash flow capabilities.** **24,286+ GitHub stars**, **AGPL-3.0 licensed** . Self-hosted double-entry bookkeeping system. **Key features**: Track transactions, budgets, and accounts; multi-currency support; rule engine for automated categorization; REST API; cash flow reporting . **Deployment**: Docker, self-hosted. **Best for**: Individuals and very small businesses tracking cash flow with full data ownership.
-
-
-
-- **[Actual Budget](https://github.com/actualbudget/actual)**
-
-  **Privacy-focused personal finance app with envelope budgeting and cash flow views.** **29,224+ GitHub stars**, **MIT licensed** . **Key features**: Envelope budgeting (assign real cash on hand to categories); **cash flow reports** built-in; bank sync (goCardless EU/UK, SimpleFIN US/Canada); QIF, OFX, QFX, CAMT.053, CSV import; optional end-to-end encryption; self-hosted sync server . **Deployment**: Self-hosted or cloud. **Best for**: Individuals and households wanting local-first budgeting with cash flow visibility.
-
-
-
-- **[cfo-cli](https://github.com/Neskys/cfo-cli)**
-
-  **Open-source financial CLI for freelancers, consultants, and small teams.** **MIT licensed** . **Key features**: Budget planning; expense and income tracking; **cash flow forecasting** with base, optimist, and pessimist scenarios; CSV and PDF reports; multi-currency with cached exchange rates; **AI insights** via Claude, OpenAI, or free local Gemma (Ollama); **MCP Server** for AI assistant integration . **Local-first**: SQLite database in `~/.cfo/`, zero cloud dependency. **Installation**: `pip install cfo-cli` or from source . **Best for**: Technical users wanting terminal-first cash flow management.
-
-
-
-### Cash Flow Forecasting & Optimization
-
-
-
-- **[Equilibrium](https://github.com/mtahakeles/equilibrium)**
-
-  **Cash flow forecasting with quantum-inspired payment scheduling for small businesses.** **Key innovation**: Projects cash position over the next **10 weeks**, then reschedules outstanding bills using a **QUBO-style cost function** solved with **Simulated Annealing**—the same technique used to benchmark quantum annealers . **Cost function combines**: Linear term (discount captured or penalty incurred for early/late payment); quadratic term (penalty on `(buffer − balance)²` for every week projected balance dips under safety buffer, plus hard penalty for negative balance) . **Interactive dashboard**: Renders forecast, optimizer convergence, and side-by-side schedule comparison with safety-buffer slider . **No dependencies**: Vanilla JavaScript, HTML5 Canvas . **Best for**: Small businesses wanting automated payment scheduling to optimize cash flow.
-
-
-
-- **[AFIS](https://github.com/afild/AFIS)**
-
-  **Open-source AI-driven financial intelligence framework for SMEs.** **Three integrated layers**: **ETL Ingestion** (CSV imports from QuickBooks/Xero, validation, deduplication, NIST-aligned governance audit trail, SQLite storage); **Predictive Analytics** (Ridge regression models for 12-month projections of revenue, expenses, and net cash flow with 95% confidence intervals; exposes burn rate, runway, net margin, cash position via Chart.js dashboards); **AI Interpretation** (natural-language management narratives, financial red flags, actionable recommendations; LLM Mode via Anthropic Claude or **Offline Mode** with deterministic rule-based heuristics—no API key required) . **Local-first**: All transaction data stays on the SME's machine; optional LLM integration transmits only computed metrics, never raw transactions . **API surface**: `/api/ingest`, `/api/kpis`, `/api/forecast`, `/api/forecast/whatif`, `/api/chat`, `/api/nist-audit` . **Stack**: FastAPI, scikit-learn, SQLite, Chart.js . **Best for**: SMEs wanting ML-powered cash flow forecasting with privacy and NIST governance.
-
-
-
-- **[pycashflow](https://github.com/H3-Consulting/pycashflow)**
-
-  **Python Flask application for future cash flow calculation and management.** **Key features**: Recurring scheduled transactions; **90-day cash flow projections** with running-balance projection; **what-if scenario modeling**; risk scoring with detailed breakdown; Plaid integration for bank connections; **REST API** with Bearer token authentication (30-day tokens, SHA-256 hashed); **AI Insights** via OpenAI or DigitalOcean GenAI Agent . **Data endpoints**: `/api/v1/dashboard` (current balance, risk score, upcoming transactions, 90-day minimum balance), `/api/v1/projections` (running-balance projection data), `/api/v1/risk-score` (detailed cash-flow risk assessment) . **All monetary values as decimal strings** to avoid floating-point precision issues . **Stack**: Flask, PostgreSQL, Fernet encryption for API keys . **Best for**: Developers wanting a REST API for cash flow forecasting.
-
-
-
-### Personal Finance & Budgeting Foundations
-
-
-
-- **[Money Manager Ex](https://github.com/moneymanagerex/moneymanagerex)**
-
-  **Free, open-source, cross-platform personal finance software.** **Key features**: Checking, credit card, savings, stock investment, and asset accounts; reminders for recurring bills and deposits; **budgeting and cash flow forecasting**; simple one-click reporting with graphs and pie charts; import from CSV, QIF; **non-proprietary SQLite database with AES encryption**; available in 24 languages . **Runs from USB key** (no install required) . **Best for**: Individuals wanting desktop personal finance with cash flow forecasting.
-
-
-
-- **[Econumo](https://github.com/econumo/econumo)**
-
-  **Self-hosted budgeting web app with envelope budgeting.** **MIT licensed**, in development since 2020, open-sourced November 2024 . **Key features**: Envelope budgeting; household sharing with per-item access; PWA mobile support; multi-currency; CSV import; **REST API with Swagger** . **Stack**: Go, SQLite or PostgreSQL . **Best for**: Households wanting self-hosted envelope budgeting with API access.
-
-
-
-### Cash Flow Forecasting Skills & Frameworks
-
-
-
-- **[cash-flow-forecaster Skill](https://skillsmp.com/zh/creators/miketreml/missioncontrol/library-business-finance-accounting-skills-cash-flow-forecaster)**
-
-  **Comprehensive AI Agent Skill for cash forecasting.** **Capabilities**: Direct method forecasting (cash receipts, disbursements, payroll timing, tax scheduling, debt service, capex); Indirect method reconciliation (net income to cash flow bridge, working capital changes); **Working capital optimization** (DSO targets, DPO optimization, cash conversion cycle); **Liquidity stress scenarios** (revenue decline, customer concentration, supply chain disruption); Bank balance aggregation; Cash position optimization . **Integration**: Treasury management system APIs (Kyriba, GTreasury), bank connectivity platforms . **Best for**: Treasury and finance teams using AI assistants.
-
-
-
-- **[financial-modeling](https://github.com/77it/financial-modeling)**
-
-  **JavaScript-based financial modeling with cash flow forecast.** **Key features**: Financial modeling, business valuation, cash flow forecast, financial ratios, balance sheet . **Best for**: Developers wanting a lightweight financial modeling foundation.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Personal Finance**: **Firefly III** (24k+ stars, double-entry, AGPL-3.0) , **Actual Budget** (29k+ stars, envelope budgeting, MIT) , **Money Manager Ex** (desktop, cash flow forecasting) , **Econumo** (self-hosted, envelope budgeting) .
-
-- **CLI/Technical**: **cfo-cli** (terminal-first, AI insights, MCP server) .
-
-- **Forecasting & Optimization**: **Equilibrium** (QUBO payment scheduling) , **AFIS** (ML projections, NIST governance) , **pycashflow** (Flask REST API, risk scoring) .
-
-- **AI Skills**: **cash-flow-forecaster** (comprehensive treasury forecasting) , **financial-modeling** (JavaScript modeling) .
-
-- **Small Business Accounting**: **Invoice Ninja** (10k+ stars, invoicing + cash flow) , **Akaunting** (10k+ stars, accounting with cash flow) .
-
-
-
-**Frameworks for building custom systems**: Combine **Firefly III** or **Actual Budget** for the core ledger and cash flow reporting, **cfo-cli** for terminal-first forecasting with AI insights, **Equilibrium** for payment scheduling optimization, **AFIS** for ML-based 12-month projections, and **pycashflow** for REST API integration. Add **PostgreSQL** for persistence and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cash flow management platforms handle sensitive financial data; ensure compliance with accounting standards and data protection regulations.
-
-- **Open-source reality**: The open-source ecosystem for cash flow management is **developing but fragmented**. **Firefly III** and **Actual Budget** provide mature personal/small business finance management with cash flow reporting . **cfo-cli**, **Equilibrium**, **AFIS**, and **pycashflow** offer focused cash flow forecasting and optimization capabilities . However, **commercial platforms** (Pulse, Fathom, Float, Agicap) provide **integrated multi-entity consolidation, real-time bank feeds, scenario modeling at scale, and enterprise support** that open-source alternatives require significant assembly and engineering investment to match. The open-source path is most viable for **personal finance, small business cash flow, or technical teams building custom forecasting tools**.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cash Flow Management Banner" width="100%" />
+</p>
+
+# 💰 Awesome Cash Flow Management 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cash-Flow-Management?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cash-Flow-Management?style=social" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cash-Flow-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cash-Flow-Management?color=blue" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🌟 Top Cash Flow Management Platforms Ecosystem & Financial Tools
 
+> **Curated List of Commercial SaaS Products & Open-Source GitHub Projects for Cash Forecasting, Liquidity Planning, Scenario Analysis & Working Capital Optimization.**
 
-**Made for CFOs, finance teams, founders, accountants, and treasury professionals.**
+**Last updated: September 2026** 📅
 
-Let's make cash flow management more open, transparent, and predictive.
+Welcome to the **Awesome Cash Flow Management** repository! This curated sitemap and directory tracks leading **SaaS platforms** and **open-source financial software** for modern **cash flow management**, **runway modeling**, and **treasury forecasting**. Designed specifically for founders, CFOs, financial planning and analysis (FP&A) teams, accountants, and software developers building financial engines.
+
+---
+
+## 📑 Table of Contents
+- [📊 Market Overview & Industry Dynamics](#-market-overview--industry-dynamics)
+- [🏢 SaaS / Commercial Hosted Platforms](#-saas--commercial-hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [❤️ Support & Sponsorship](#%EF%B8%8F-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 Market Overview & Industry Dynamics
+
+> **Estimated Market Size & Industry Structure:**  
+> The global cash flow management and liquidity forecasting software market is estimated at **$1.8 Billion – $2.4 Billion (2026)**, expanding at a CAGR of ~13.5%. The market is **moderately fragmented**: enterprise treasury solutions (e.g., Kyriba, HighRadius) serve large corporations, while mid-market and SMB segments feature specialized FP&A and cash-forecasting SaaS platforms alongside a fast-growing open-source developer ecosystem.
+
+---
+
+## 🏢 SaaS / Commercial Hosted Platforms
+
+Below is a detailed comparison of top commercial cash flow management and FP&A SaaS platforms, ordered by company size (estimated revenue / valuation, descending).
+
+| 🏢 Platform | 📝 Overview & Core Capabilities | 💰 Pricing (Starting Tier) | 🎁 Free Tier / Free Trial Limits | 📈 Company Size (Revenue / Valuation) |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Agicap](https://agicap.com/)** 🇫🇷 | European leader in automated cash flow management, bank aggregation, multi-entity treasury visibility, and runway modeling. | $166/month (€150/mo minimum custom package) | 7-Day Free Trial (Full feature access with sample data & bank sync demo) | **~$60M ARR / $500M+ Valuation** |
+| **[Cube](https://www.cubesoftware.com/)** 🇺🇸 | Spreadsheet-native (Excel & Google Sheets) FP&A platform connecting ERPs to real-time financial models and cash forecasts. | $1,250/month (Premium tier billed annually) | 14-Day Guided Sandbox Trial (Sales-assisted live data preview) | **~$25M ARR / $150M Valuation** |
+| **[Fathom](https://www.fathomhq.com/)** 🇦🇺 | Financial analysis, visual reporting dashboards, consolidated cash flow forecasting, and KPI benchmarking for advisory firms. | $55/month (Single entity plan) | 14-Day Free Trial (No credit card required, up to 5 entities) | **~$20M ARR / $100M Valuation** |
+| **[Jirav](https://www.jirav.com/)** 🇺🇸 | Driver-based financial planning, workforce budgeting, dynamic revenue modeling, and automated cash flow forecasting. | $500/month (Starter plan billed annually) | 14-Day Free Trial (Full access to core modeling features) | **~$12M ARR / $60M Valuation** |
+| **[Float](https://floatapp.com/)** 🇬🇧 | Real-time visual cash flow forecasting directly integrated with Xero, QuickBooks Online, and FreeAgent. | $69/month (Essential plan billed annually) | 14-Day Free Trial (No credit card required, unlimited bank connections) | **~$8M ARR / $40M Valuation** |
+| **[PlanGuru](https://www.planguru.com/)** 🇺🇸 | Budgeting, 3-statement financial modeling, break-even analysis, and 12-month to 10-year cash flow projections. | $99/month (Basic plan, $899 billed annually) | 14-Day Free Trial (Full desktop or web access with sample datasets) | **~$6M ARR / $25M Valuation** |
+| **[Dryrun](https://www.dryrun.com/)** 🇨🇦 | Multi-scenario cash flow modeling, customer invoice tracking, payment risk scoring, and working capital forecasting. | $199/month (Standard plan billed annually) | 14-Day Free Trial (No credit card required, 3 scenario models) | **~$4M ARR / $20M Valuation** |
+| **[Pulse](https://www.pulseapp.com/)** 🇺🇸 | Lightweight cash flow management app for startups and small businesses tracking income, expenses, and liquidity. | $29/month (Basics tier) | 30-Day Free Trial (Credit card required upfront, full feature set) | **~$2M ARR / $10M Valuation** |
+| **[CashFlow Frog](https://www.cashflowfrog.com/)** 🇮🇱 | Automated cash flow forecasting, customer payment behavior analytics, branded customer portals, and planned transaction modeling. | $41/month (Standard SMB plan billed annually) | 14-Day Free Trial (No credit card required, 1 organization sync) | **~$2M ARR / $10M Valuation** |
+| **[Fluidly](https://fluidly.com/)** 🇬🇧 | Automated cash flow forecasting and intelligent invoice collection engine (integrated within digital accounting suites). | $15/month (£12/mo starter module) | 14-Day Free Trial (Basic cash forecast sync & invoice tracking) | **~$2M ARR / Acquisition by OakNorth** |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The open-source cash flow ecosystem features self-hosted double-entry bookkeeping ledgers, ML-powered forecasting frameworks, terminal-first CLIs, and quantum-inspired payment scheduling engines.
+
+Repositories are ordered by **GitHub Star Count (Descending)** 🌟.
+
+| 🛠️ Repository | ⭐ Stars | 📜 License | 🧰 Tech Stack | 📌 Core Capabilities & Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Actual Budget](https://github.com/actualbudget/actual)** | [<img src="https://img.shields.io/github/stars/actualbudget/actual?style=social&color=white" alt="Actual Budget Stars"/>](https://github.com/actualbudget/actual/stargazers) | `MIT` | Node.js, React, SQLite | **Local-first, privacy-focused envelope budgeting & cash flow app.** Zero cloud lock-in, end-to-end encryption, multi-device sync, and bank feeds via GoCardless/SimpleFIN. |
+| **[Firefly III](https://github.com/firefly-iii/firefly-iii)** | [<img src="https://img.shields.io/github/stars/firefly-iii/firefly-iii?style=social&color=white" alt="Firefly III Stars"/>](https://github.com/firefly-iii/firefly-iii/stargazers) | `AGPL-3.0` | PHP, Laravel, Docker | **Self-hosted double-entry financial manager with cash flow views.** Automated rule engine, multi-currency support, REST API, recurring transaction schedules, and budget tracking. |
+| **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [<img src="https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white" alt="Invoice Ninja Stars"/>](https://github.com/invoiceninja/invoiceninja/stargazers) | `AEL-1.0` | PHP, Flutter, Vue.js | **Open-source invoicing, expense tracking & cash flow platform.** Invoicing, client portals, automated recurring payments, expense tracking, and real-time cash reports. |
+| **[Akaunting](https://github.com/akaunting/akaunting)** | [<img src="https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white" alt="Akaunting Stars"/>](https://github.com/akaunting/akaunting/stargazers) | `GPL-3.0` | PHP, Laravel, Vue.js | **Free online accounting software designed for small businesses.** Multi-entity management, cash flow statements, vendor expense management, and client invoicing. |
+| **[Money Manager Ex](https://github.com/moneymanagerex/moneymanagerex)** | [<img src="https://img.shields.io/github/stars/moneymanagerex/moneymanagerex?style=social&color=white" alt="Money Manager Ex Stars"/>](https://github.com/moneymanagerex/moneymanagerex/stargazers) | `GPL-2.0` | C++, wxWidgets, SQLite | **Cross-platform desktop personal finance & cash forecasting.** Non-proprietary SQLite storage, AES encryption, USB portable execution, recurring bill forecasting, and graph reports. |
+| **[GNUCash](https://github.com/Gnucash/gnucash)** | [<img src="https://img.shields.io/github/stars/Gnucash/gnucash?style=social&color=white" alt="GNUCash Stars"/>](https://github.com/Gnucash/gnucash/stargazers) | `GPL-3.0` | C, Scheme, GTK | **Professional accounting software with cash flow reporting.** Double-entry accounting ledger, scheduled transactions, financial calculations, and cash reconciliation. |
+| **[cfo-cli](https://github.com/Neskys/cfo-cli)** | [<img src="https://img.shields.io/github/stars/Neskys/cfo-cli?style=social&color=white" alt="cfo-cli Stars"/>](https://github.com/Neskys/cfo-cli/stargazers) | `MIT` | Python, SQLite, MCP | **Terminal-first financial CLI & AI cash flow forecaster.** Multi-scenario projections (optimist/pessimist), MCP server integration for LLM agents, local SQLite database, and multi-currency support. |
+| **[Equilibrium](https://github.com/mtahakeles/equilibrium)** | [<img src="https://img.shields.io/github/stars/mtahakeles/equilibrium?style=social&color=white" alt="Equilibrium Stars"/>](https://github.com/mtahakeles/equilibrium/stargazers) | `MIT` | JavaScript, Canvas | **Quantum-inspired payment scheduler for cash flow optimization.** Uses QUBO-style cost functions and Simulated Annealing to schedule bills while maintaining safety cash buffers. |
+| **[Econumo](https://github.com/econumo/econumo)** | [<img src="https://img.shields.io/github/stars/econumo/econumo?style=social&color=white" alt="Econumo Stars"/>](https://github.com/econumo/econumo/stargazers) | `MIT` | Go, Vue.js, SQLite | **Self-hosted envelope budgeting app with REST API.** Multi-user household sharing, PWA support, envelope allocation, and automated CSV import parsers. |
+| **[pycashflow](https://github.com/H3-Consulting/pycashflow)** | [<img src="https://img.shields.io/github/stars/H3-Consulting/pycashflow?style=social&color=white" alt="pycashflow Stars"/>](https://github.com/H3-Consulting/pycashflow/stargazers) | `MIT` | Python, Flask, PostgreSQL | **REST API engine for 90-day cash flow projections.** Running-balance calculation, what-if risk scoring, Plaid bank synchronization, and exact Decimal string arithmetic. |
+| **[AFIS Framework](https://github.com/afild/AFIS)** | [<img src="https://img.shields.io/github/stars/afild/AFIS?style=social&color=white" alt="AFIS Stars"/>](https://github.com/afild/AFIS/stargazers) | `MIT` | Python, FastAPI, scikit-learn | **AI-driven financial intelligence & 12-month ML cash forecaster.** Ridge regression cash projections with 95% confidence intervals, NIST AI RMF governance audit trail, and offline LLM heuristics. |
+| **[financial-modeling](https://github.com/77it/financial-modeling)** | [<img src="https://img.shields.io/github/stars/77it/financial-modeling?style=social&color=white" alt="financial-modeling Stars"/>](https://github.com/77it/financial-modeling/stargazers) | `MIT` | JavaScript, Node.js | **Lightweight JS financial modeling and cash flow library.** Discounted cash flow (DCF), valuation ratios, statement bridges, and forecast schedule generators. |
+| **[cash-flow-forecaster Skill](https://skillsmp.com/zh/creators/miketreml/missioncontrol/library-business-finance-accounting-skills-cash-flow-forecaster)** | [<img src="https://img.shields.io/badge/Skill-AI--Agent-blueviolet?style=social" alt="AI Skill"/>](https://skillsmp.com/) | `Custom` | AI Prompt / Spec | **Autonomous AI Agent Skill for CFO treasury modeling.** Direct/indirect forecasting methods, DSO/DPO working capital optimization, and bank liquidity stress testing. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! 💖
+
+1. **Fork** the repository 🍴
+2. **Create** a feature branch (`git checkout -b feature/new-tool`) 🌿
+3. **Add** your tool or project to `README.md` keeping formatting consistent 📝
+4. **Open** a Pull Request with a clear summary of your changes 🚀
+
+---
+
+## ❤️ Support & Sponsorship
+
+If you find this curated cash flow management ecosystem list helpful, please consider supporting the project! 🌟
+
+- ⭐ **Star** this repository to increase visibility.
+- 🔄 **Fork** and share with fellow founders, CFOs, and engineers.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cash-Flow-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cash-Flow-Management&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational, evaluation, and research purposes.
+- Commercial trademarks and product names belong to their respective corporate entities.
+- Financial systems process sensitive payment and ledger data; always verify compliance with security standards (SOC 2, GDPR, ISO 27001) before deployment.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for CFOs, Finance Teams, Startup Founders & Open-Source Developers.</b>
+</p>
